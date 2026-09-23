@@ -1,1 +1,14 @@
+spring:
+  application:
+    name: user-service
 
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+user:
+  jwt:
+    expiration: 3600000
