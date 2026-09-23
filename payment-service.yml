@@ -1,4 +1,6 @@
-build:
-  id: 1
-  version: 1.0
-  name: Default Github configuration
+spring:
+  application:
+    name: payment-service
+
+payment:
+  currency: INR
