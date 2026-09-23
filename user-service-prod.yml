@@ -1,1 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://prod-db.example.com:3306/user_db
 
+user:
+  external-api:
+    base-url: https://api.example.com
