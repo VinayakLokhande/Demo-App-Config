@@ -1,1 +1,3 @@
-
+payment:
+  gateway:
+    base-url: https://payment.example.com
