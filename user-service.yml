@@ -1,14 +1,12 @@
+server:
+  port: 8081
+
 spring:
-  application:
-    name: user-service
-
-  datasource:
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
     hibernate:
-      ddl-auto: validate
-
-user:
-  jwt:
-    expiration: 3600000
+      ddl-auto: create
